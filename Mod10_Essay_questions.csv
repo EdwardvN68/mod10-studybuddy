@@ -1,0 +1,256 @@
+topic,question,answer,reference
+Flight Permit,What is a Flight Permit and under what circumstances is it issued by the GCAA?,"A Flight Permit is a temporary authorisation issued by the GCAA to allow an aircraft to fly when it does not meet the requirements for a valid Certificate of Airworthiness but is still considered safe for the intended flight. It is issued under the provisions of CAR V, specifically CAR 21 Subpart P.
+
+Flight Permits may be granted for purposes such as ferry flights, test flights, delivery flights, or for flying aircraft to a location where maintenance, repair, or storage will take place. It may also be issued for demonstration or exhibition flights.
+
+To obtain a Flight Permit, the operator must submit an application to the GCAA including technical justification, route, flight conditions, and any limitations. Supporting documents such as a Certificate of Fitness for Flight, current weight and balance data, and maintenance status must be provided. The GCAA may also request a risk assessment.
+
+The permit is subject to strict limitations such as daylight-only operation, minimum equipment requirements, or route restrictions. In some cases, restrictions may include limitations on altitude, weather conditions, and crew qualifications.
+
+A Flight Permit is not equivalent to a Certificate of Airworthiness and is only valid for the specific flight or duration mentioned in the approval. The aircraft must be operated in accordance with the permit conditions, and the permit must be carried on board.",GCAA
+MEL,What is a Minimum Equipment List (MEL) and how is it managed under GCAA regulations?,"A Minimum Equipment List (MEL) is a GCAA-approved document developed by the operator based on the Master Minimum Equipment List (MMEL). It specifies the equipment and systems that may be inoperative during flight under defined conditions while maintaining an acceptable level of safety.
+Under CAR AIR OPS Subpart B, the MEL is required for all commercial air transport operators and forms part of the Operations Manual. It must reflect the actual aircraft configuration and operating conditions, including the type of operation, route structure, and airspace requirements.
+The MEL must include:
+1.	A list of items and systems permitted to be inoperative.
+2.	Conditions and limitations for dispatch with inoperative items.
+3.	Placarding and operational procedures required by the flight crew.
+4.	Associated maintenance procedures and deferral intervals.
+The MEL is specific to each aircraft registration and must be kept up to date with changes to the MMEL, the aircraft configuration, or regulatory requirements. The operator must have internal control procedures for MEL usage, approval, and revision, typically described in the Operations Manual and Continuing Airworthiness Management Exposition (CAME).
+Deferrals must be recorded and tracked, with time limits and corrective actions clearly defined. MEL items must be rectified within the approved deferral period, and any extensions require GCAA approval or an acceptable procedure stated in the MEL policy.
+Improper use or failure to follow MEL procedures may result in operational or airworthiness findings during GCAA audits or ramp inspections.",GCAA
+MMEL,What is a Master Minimum Equipment List (MMEL) and how is it used under GCAA regulations?,"A Master Minimum Equipment List (MMEL) is a document approved by the aircrafts State of Design that outlines equipment and systems which may be inoperative for dispatch under specific conditions, without significantly affecting the aircrafts airworthiness or safety. It forms the basis for developing the operator-specific Minimum Equipment List (MEL).
+Under CAR AIR OPS Subpart B and referenced in CAR M.302, the MMEL is not used directly by operators but provides the template from which the MEL is derived. The MEL must be tailored to the specific aircraft and operation and approved by the GCAA.
+The MMEL includes:
+1.	The system or item allowed to be inoperative.
+2.	Associated conditions, limitations, and placarding requirements.
+3.	Maximum duration of operation with the item inoperative.
+4.	References to maintenance procedures or dispatch conditions.
+The operators MEL, based on the MMEL, is a controlled document and must be referenced in the Operations Manual. It must be approved by the GCAA and kept up to date with changes to the MMEL, operational context, or aircraft configuration.
+Aircraft may not be dispatched with inoperative equipment unless it is listed in the approved MEL, and the conditions for use are fully met. Maintenance procedures for deferral and rectification must be included in the AMP and coordinated with the CAMO.
+MEL compliance is monitored during operational audits, airworthiness reviews, and ramp inspections. Improper use or lack of control over MEL procedures may lead to findings.",GCAA
+MOE,What is a Maintenance Organisation Exposition (MOE) and what are its requirements under GCAA CAR 145?,"A MOE is a document or set of documents that defines how a GCAA-approved maintenance organisation complies with CAR 145 requirements. It outlines the organisation's scope of work, procedures, and quality assurance systems, serving as a reference for both internal personnel and regulatory authorities.
+Under CAR 145.70, the MOE must include:
+1.	A statement signed by the accountable manager confirming the organisation's commitment to comply with CAR 145.
+2.	A general description of the scope of work authorised under the organisations terms of approval.
+3.	The titles and names of the persons nominated under CAR 145.30.
+4.	The duties and responsibilities of the nominated persons.
+5.	An organisation chart showing the associated chains of responsibility.
+6.	A list of certifying staff, support staff, and airworthiness review staff, if applicable.
+7.	A general description of manpower resources.
+8.	A general description of the organisations facilities at each address specified in the approval certificate.
+9.	A specification of the organisations scope of work relevant to the extent of approval.
+10.	The notification procedure for changes as per CAR 145.85.
+11.	The MOE amendment procedure.
+12.	The procedures specifying how the organisation ensures compliance with CAR 145.
+13.	A list of the commercial operators to which the organisation provides regular maintenance services.
+14.	A list of subcontracted organisations, if applicable.
+15.	A list of approved locations, including line maintenance locations.
+16.	A list of contracted organisations.
+The MOE must be kept up to date, and any amendments must be approved by the GCAA. Minor amendments may be approved through an exposition procedure, subject to criteria defined in the MOE.
+The MOE must be readily available to all staff and is a controlled document subject to regular audit by the GCAA
+The MOE serves as the foundation for the organisation's approval and must be adhered to at all times. It ensures that maintenance activities are carried out in accordance with approved procedures, maintaining the safety and airworthiness of aircraft.",GCAA
+QCM,What is a Quality Control Manual (QCM) and how is it used under GCAA CAR 145?,"A QCM, often included as part of or referenced in the Maintenance Organisation Exposition (MOE), outlines the procedures, responsibilities, and processes used by a CAR 145-approved organisation to ensure compliance with regulatory requirements and internal quality standards.
+Under CAR 145.A.65, an organisation must establish an independent Quality System to monitor compliance with CAR 145 and with internal procedures. The QCM provides the structure for this system and includes procedures for audits, reporting, corrective actions, and quality assurance of maintenance activities.
+The QCM typically contains:
+1.	The organisations quality policy and objectives.
+2.	The structure and responsibilities of the Quality Department.
+3.	Audit schedules and procedures for internal and external audits.
+4.	Procedures for identifying and reporting non-conformances.
+5.	Corrective and preventive action processes.
+6.	Documentation and record-keeping requirements.
+7.	Training and qualification requirements for quality staff.
+8.	Procedures for reviewing and updating quality procedures.
+9.	Interfaces with Safety Management Systems (SMS) where applicable.
+The QCM must be authorised by the Accountable Manager and is subject to GCAA approval. It is a live document that must be reviewed regularly and updated when necessary. In many cases, the QCM may be integrated into the MOE or kept as a referenced controlled document.
+The purpose of the QCM is to ensure that all maintenance and related activities are carried out in compliance with applicable regulations, procedures, and safety standards, thereby maintaining the airworthiness of aircraft.",GCAA
+Maintenance Data,What is meant by the term Maintenance Data?,"GCAA CAR V CAR 145.45 requires all organisations to hold and use applicable current maintenance data in the performance of maintenance on aircraft, components or processes specified in the organisation's approval class rating schedule and any associated capability list.
+Maintenance Data includes but is not limited to information issued by the GCAA, Airworthiness Directives (ADs), the Type Certificate Holder, the Supplementary Type Certificate Holder, Repair or Design Organisation, or applicable manufacturer. This may include Aircraft Maintenance Manuals (AMM), Structural Repair Manuals (SRM), Wiring Diagrams (WDM), Component Maintenance Manuals (CMM), Illustrated Parts Catalogues (IPC), Service Bulletins (SB), and Modifications or Repairs.
+The organisation must ensure the data is controlled, up to date and available in the work area for use by the certifying staff and personnel. The organisation must ensure complex tasks are broken into clear stages and transcribed into work cards or computer-based worksheets that reference the data. These systems must have protections in place to prevent unauthorised editing and include a daily backup.
+In cases where the maintenance data contains errors or discrepancies, these must be reported to the author of the data or the Type Certificate Holder. No work should be carried out using incorrect or superseded data.
+Maintenance Data must also be available during audits and inspections to demonstrate traceability and compliance with the task being performed.",GCAA
+Techlog,What are the recording functions of a Technical Logbook under GCAA regulations?,"A Technical Logbook is an official aircraft document used to record operational, technical, and maintenance information during line operations. It provides a legal and traceable record of aircraft status and is essential for ensuring the continuity of airworthiness. The Technical Logbook is a required document under GCAA CAR AIR OPS Subpart M and CAR M.305.
+The key recording functions of the Technical Logbook include:
+1.	Flight Details  Recording of flight number, date, departure and arrival times, block times, flight crew names, and aircraft registration.
+2.	Defects and Malfunctions  Any aircraft or system defects observed before, during, or after the flight must be entered, including relevant ATA chapters.
+3.	Maintenance Actions  Corrective actions carried out by certifying staff must be recorded, signed, and dated in the logbook with reference to the maintenance data used.
+4.	Deferred Defects  Entry and control of deferred items under the Minimum Equipment List (MEL), including deferral category, rectification date limit, and tracking information.
+5.	Fuel and Oil Uplift  Recording of fuel and oil quantity uplifted, consumption, and any fuel discrepancies.
+6.	Operational Remarks  Notes from flight crew or maintenance personnel related to aircraft performance or issues requiring follow-up.
+7.	Certification of Release to Service (CRS)  A signature and licence number from the authorised certifying staff confirming the aircraft is fit for flight after maintenance.
+The Technical Logbook must be designed and controlled by the operator and approved by the GCAA. It must include traceable, legible, and tamper-resistant entries. Electronic technical logbooks may be used if they meet GCAA requirements for integrity, backup, and security.
+The logbook serves as an essential source of information for the Continuing Airworthiness Management Organisation (CAMO), maintenance providers, and regulatory authorities during inspections, audits, and airworthiness reviews.",GCAA
+ADD,What is Deferred Defect Management and how is it handled under GCAA regulations?,"Deferred Defect Management is the controlled process of postponing the rectification of aircraft defects that do not immediately affect the safety of flight. These defects are managed under strict procedures and must be within the allowances defined by the Minimum Equipment List (MEL) or Configuration Deviation List (CDL).
+Under GCAA CAR M.302 and CAR AIR OPS Subpart M, all deferred defects must be properly evaluated, documented, tracked, and rectified within approved time limits. The Continuing Airworthiness Management Organisation (CAMO) is responsible for oversight, while the maintenance organisation ensures proper technical handling.
+Key steps in Deferred Defect Management include:
+1.	Identification of the defect  Reported by flight crew, maintenance staff, or through system monitoring.
+2.	Evaluation against MEL or CDL  The defect is assessed to determine whether deferral is permitted and under what conditions.
+3.	Deferral entry  Logged in the Technical Logbook and defect control system, including MEL/CDL reference, deferral category (A, B, C, D), operational restrictions, and rectification deadline.
+4.	Placarding and operational conditions  The affected system or equipment must be placarded as inoperative, and any operational or maintenance limitations must be followed.
+5.	Monitoring and follow-up  The CAMO and maintenance organisation must monitor all open deferred defects and ensure timely rectification before expiry of the deferral period.
+6.	Closure  Once rectified, the defect is cleared with proper documentation and a Certificate of Release to Service (CRS) issued.
+If the rectification cannot be completed within the allowed period, an extension may only be granted by the GCAA or through an approved procedure documented in the operators MEL policy.
+Deferred Defect Management is a critical part of continuing airworthiness, allowing operational flexibility while ensuring flight safety is not compromised.",GCAA
+AD's,What is an Airworthiness Directive (AD) and how is it managed under GCAA CAR M?,"An AD is a mandatory instruction issued by the GCAA or the State of Design to ensure continued airworthiness of an aircraft, engine, propeller, or component. ADs address known unsafe conditions and prescribe inspections, modifications, limitations, or maintenance actions to resolve them.
+Under GCAA CAR M.302 and CAR M.306, operators and continuing airworthiness management organisations (CAMOs) are required to ensure that all applicable ADs are identified, assessed, and fully complied with within the time limits specified by the directive.
+ADs can be issued for:
+1.	Aircraft or components with identified unsafe conditions.
+2.	Requirements developed by the State of Design and adopted by the GCAA.
+3.	Situations involving recurring defects or systemic issues that impact flight safety.
+The CAMO is responsible for tracking ADs through a documented system and must include AD compliance in the Aircraft Maintenance Programme (AMP). Evidence of compliance must be recorded and retained for at least 36 months.
+For commercial operators under CAR AIR OPS, the CAMO must have procedures in the CAME (Continuing Airworthiness Management Exposition) detailing how ADs are assessed, implemented, and controlled.
+In the event an AD cannot be complied with as specified, the operator must seek an extension or alternative method of compliance (AMOC) from the GCAA.
+AD compliance is routinely verified during airworthiness reviews, audits, and inspections by the GCAA or the approved CAMO.",GCAA
+ARC,What is an Airworthiness Review Certificate (ARC) and how is it managed under GCAA CAR M regulations?,"An ARC is a document issued after a formal review of an aircrafts continuing airworthiness and validity of its Certificate of Airworthiness (C of A). It is required annually and confirms that the aircraft complies with applicable maintenance requirements and is fit for continued safe operation.
+Under GCAA CAR M Subpart I, an ARC may be issued by the GCAA or by an approved Continuing Airworthiness Management Organisation (CAMO) with authorisation under CAR M.901. The review is documented using AWF-ARC-15a (when issued by GCAA) or AWF-ARC-15b (when issued by an approved CAMO), and must be submitted to the GCAA for endorsement.
+The Airworthiness Review process includes:
+1.	A full documented review of aircraft records  Ensuring all required maintenance, inspections, ADs, and component replacements have been properly recorded and completed.
+2.	A physical survey of the aircraft  To verify configuration, condition, and conformity with the approved AMP and airworthiness status.
+3.	Controlled environment condition  The ARC remains valid for 12 months only if the aircraft remains under continuous management by a single CAMO and is maintained by an approved organisation (CAR 145 or Subpart F).
+ARC eligibility also depends on the qualifications of the Airworthiness Review Staff, who must meet CAR M.707 requirements. This includes holding a CAR 66 Licence or aeronautical degree with at least five years of relevant experience. Where this qualification is not held, ten years of experience is required.
+Operators must ensure that ARCs are renewed or extended within the permitted timeframe. An ARC may be issued or extended up to 30 days before its expiry to align with maintenance schedules without losing the original expiry date.
+Failure to maintain a valid ARC renders the Certificate of Airworthiness invalid, and the aircraft cannot be operated.",GCAA
+C of A,What is a Certificate of Airworthiness and how is it managed under GCAA regulations?,"A C of A is an official document issued by the General Civil Aviation Authority (GCAA) confirming that an aircraft complies with its approved type design and is in a condition for safe operation. It is a legal requirement for the operation of any UAE-registered aircraft.
+Under GCAA CAR 21 Subpart H, the Certificate of Airworthiness is issued by the GCAA upon satisfactory demonstration that the aircraft conforms to the applicable Type Certificate (TC), has undergone required inspections, and meets the airworthiness and environmental protection standards.
+Key conditions for issuing and maintaining a C of A include:
+1.	Conformity with Type Design  The aircraft must fully comply with the Type Certificate, including all modifications and Service Bulletins applicable to the aircraft type.
+2.	Compliance with the Aircraft Maintenance Programme (AMP)  All scheduled maintenance, mandatory inspections, and Airworthiness Directives (ADs) must be carried out and documented.
+3.	Valid Airworthiness Review Certificate (ARC)  An annual ARC issued by the GCAA or an approved CAMO under CAR M Subpart I is required to validate the C of A.
+4.	Controlled Environment  The aircraft must be managed by an approved Continuing Airworthiness Management Organisation (CAMO) and maintained by a CAR 145 or Subpart F approved maintenance organisation.
+5.	Applicable Flight Manual and Placards  The aircraft must carry up-to-date flight manuals, placards, and documents as required by the GCAA.
+The C of A remains valid as long as the aircraft continues to meet the requirements of continuing airworthiness and remains under a valid ARC. If the ARC expires or the aircraft is involved in a major incident, the Certificate of Airworthiness may be suspended or revoked.
+The C of A must be kept on board the aircraft at all times and presented during inspections, audits, or ramp checks.",GCAA
+CAR M, What is GCAA CAR M and how does it support Continuing Airworthiness?,"GCAA CAR M is a regulation which defines the requirements for Continuing Airworthiness Management of aircraft and components. It applies to all UAE-registered aircraft and outlines the responsibilities of owners, operators, and maintenance organisations to ensure aircraft remain airworthy throughout their operational life.
+
+CAR M is structured into subparts, including Subpart A (General), Subpart B (Accountability), Subpart C (Continuing Airworthiness), Subpart D (Maintenance Standards), Subpart E (Components), Subpart F (Maintenance Organisation Approvals), Subpart G (Continuing Airworthiness Management Organisation  CAMO), Subpart H (Certificate of Release to Service), and Subpart I (Airworthiness Review Certificates).
+
+A key requirement of CAR M is that the aircraft owner or operator is responsible for ensuring compliance with the approved Aircraft Maintenance Programme (AMP), which includes scheduled maintenance, mandatory inspections, and incorporation of Airworthiness Directives. All maintenance must be performed by GCAA-approved CAR 145 or Subpart F organisations.
+
+CAMOs approved under Subpart G are responsible for managing the continuing airworthiness of aircraft, including control of maintenance records, ensuring up-to-date maintenance data, and coordinating with maintenance providers. For aircraft operated under CAR AIR OPS, CAMO oversight is mandatory.
+
+Under Subpart I, the CAMO may conduct Airworthiness Reviews and issue an Airworthiness Review Certificate (ARC) if the aircraft is managed in a controlled environment. This review includes a detailed check of aircraft records and a physical survey.
+
+CAR M ensures the safety of flight operations by establishing clear responsibilities and oversight mechanisms to maintain aircraft in an airworthy condition at all times.",GCAA
+CFF,What is a Certificate of Fitness for Flight and when is it required under GCAA regulations?,"A Certificate of Fitness for Flight is a document issued to certify that an aircraft is safe for a ferry or positioning flight when it does not meet the full requirements for a standard Certificate of Airworthiness (C of A). This is governed by GCAA regulations under CAR V, particularly CAR 21 and CAR M.
+
+A Certificate of Fitness for Flight is required when the aircraft is not in a fully airworthy condition but needs to be flown to a location for repair, maintenance, or storage. It is also required after major maintenance or storage periods when the aircrafts airworthiness status is uncertain and a test flight or relocation is needed.
+
+The certificate must be issued by an appropriately approved organisation, typically a CAR 145 or CAMO, and the aircraft must be inspected to ensure that the intended flight can be safely conducted under specified limitations. The issuer of the certificate must ensure that all critical systems required for safe flight are functional and that any defects or deferred items do not affect flight safety.
+
+The certificate is typically valid for a single flight or a limited time and must include any special conditions or limitations. These may include altitude restrictions, daylight-only operations, or restricted crew and payload.
+
+A Certificate of Fitness for Flight must be kept with the aircraft and shown to the flight crew. It does not replace the Certificate of Airworthiness but serves as a temporary release for a specific purpose under controlled conditions.",GCAA
+CVR,What is a Cockpit Voice Recorder (CVR) and what are its requirements under GCAA regulations?,"A Cockpit Voice Recorder (CVR) is a flight recorder that continuously records the audio environment in the cockpit, including communications between the pilots, radio transmissions, aural warnings, and background sounds. It is a critical device for accident and incident investigation.
+Under CAR AIR OPS Subpart K, the CVR is required for all turbine-powered aircraft with a maximum certificated take-off mass above 5,700 kg or authorized to carry more than 19 passengers. It must meet the specifications defined in ICAO Annex 6, and comply with EUROCAE ED-112A standards for crash survivability and recording performance.
+Key requirements include:
+1.	Continuous recording for at least the last 2 hours of operation.
+2.	Independent power supply that provides 10 minutes of power in case of aircraft power loss.
+3.	Installation in a crash-survivable location, usually in the aircraft tail section.
+4.	Clear labeling and protection against unauthorised access or erasure.
+The CVR must be maintained under the Aircraft Maintenance Programme (AMP) and inspected regularly to verify recording quality. Maintenance personnel must check the recording duration and functionality as per the manufacturer's instructions and GCAA-approved procedures.
+Operators must have procedures for CVR data handling, especially following incidents or abnormal events. CVR recordings are protected under confidentiality laws and may only be accessed by the GCAA, the aircraft operators safety department, or an approved investigation authority.
+The presence and serviceability of the CVR are routinely checked during maintenance, audits, and ramp inspections. Deficiencies must be rectified in accordance with the Minimum Equipment List (MEL) and GCAA guidance.",GCAA
+FDR,What is a Flight Data Recorder (FDR) and what are its requirements under GCAA regulations?,"A FDR is a crash-protected device that continuously records aircraft flight parameters to support accident investigation and flight safety analysis. It captures data such as altitude, airspeed, heading, control inputs, engine performance, and other critical flight information.
+Under CAR AIR OPS Subpart K, an FDR is required for turbine-powered aircraft exceeding 5,700 kg maximum take-off mass or those approved to carry more than 19 passengers. The specifications for FDR performance and data sets are aligned with ICAO Annex 6 and EUROCAE ED-112A standards.
+Key requirements for FDR include:
+1.	Minimum recording duration  Typically 25 hours of flight data.
+2.	Crash survivability  Must withstand impact, fire, and submersion conditions.
+3.	Data content  Varies based on aircraft type and date of certification but must include parameters listed in ICAO Annex 6 Part I, Appendix 8.
+4.	Independent power supply  To maintain data capture during electrical failure.
+5.	Installation  Located in the rear fuselage or other crash-protected location.
+The FDR must be maintained under the Aircraft Maintenance Programme (AMP), with routine checks to verify recording capability and parameter accuracy. Downloaded data may also be used for Flight Data Monitoring (FDM) programs, required for certain commercial air transport operations.
+Operators must follow strict procedures for the preservation, handling, and downloading of FDR data after an incident or accident. Access to data is regulated to ensure confidentiality and proper use under the oversight of the GCAA or an authorised accident investigation body.
+The operational status of the FDR is checked during inspections and audits. Any malfunction must be rectified according to the MEL and GCAA regulations.",GCAA
+DOA,What are the responsibilities of a Design Organisation Approval (DOA) under GCAA CAR 21?,"A DOA is an authorisation issued by the GCAA to an organisation responsible for the design and approval of aircraft, components, or changes to type design. The DOA ensures that all design work is conducted in accordance with GCAA regulatory requirements and accepted design standards.
+Under CAR 21 Subpart J, a DOA is responsible for:
+1.	Establishing and maintaining a Design Assurance System to ensure compliance with applicable airworthiness and environmental protection requirements.
+2.	Conducting design and certification activities, including original type design, Supplemental Type Certificates (STC), repairs, and modifications.
+3.	Demonstrating compliance with applicable certification specifications and submitting the required documentation and compliance evidence to the GCAA.
+4.	Maintaining communication with the GCAA and ensuring that all design changes or approvals are coordinated with the competent authority.
+5.	Ensuring design data is controlled, verified, and released only when compliance has been demonstrated.
+6.	Appointing key personnel, including the Head of Design Organisation and Compliance Verification Engineers (CVEs), who are responsible for verifying compliance within their respective technical disciplines.
+7.	Issuing Statements of Compliance and, where authorised, approving minor design changes and repairs internally without direct GCAA involvement.
+8.	Reporting unsafe conditions discovered during the design process or post-certification and proposing appropriate corrective actions or Service Bulletins.
+The DOA framework supports the GCAAs certification and oversight responsibilities and plays a critical role in ensuring aviation safety through robust and independently verified design processes.",GCAA
+LM tasks and Checks, What are Line Maintenance Tasks and Progressive Checks under GCAA CAR 145 regulations?,"Line Maintenance refers to routine maintenance tasks carried out to ensure the ongoing airworthiness of an aircraft during its daily operation. These tasks are performed at the flight line or ramp and are essential for dispatching the aircraft safely. Progressive Checks are scheduled maintenance tasks divided over time and aligned with operational availability.
+Under GCAA CAR 145.10 and 145.25, Line Maintenance must be carried out by an approved maintenance organisation, using trained and authorised certifying staff. The tasks performed must comply with the Aircraft Maintenance Programme (AMP) approved under CAR M.302.
+Typical Line Maintenance Tasks include:
+1.	Daily or transit checks.
+2.	Fluid levels inspection and replenishment (oil, hydraulic fluid, potable water).
+3.	Tire and brake condition checks.
+4.	Navigation, lighting, and emergency system functionality.
+5.	Minor scheduled servicing and lubrication.
+6.	Minor defect rectification and deferred item follow-ups (within MEL limitations).
+7.	Pre-flight inspections as per aircraft type-specific procedures.
+Progressive Checks refer to maintenance inspections broken down into smaller portions and distributed over a series of scheduled events. These checks are typically used for aircraft operating in high-frequency environments and allow maintenance without taking the aircraft out of service for extended periods.
+Progressive checks must:
+	Be documented within the AMP and approved by the GCAA.
+	Ensure that all mandatory inspections are completed within the required calendar or flight hour limits.
+	Be tracked through a technical logbook or maintenance control system.
+All line maintenance and progressive tasks must be recorded, and a Certificate of Release to Service (CRS) must be issued by certifying staff holding the appropriate CAR 66 licence and company authorisation.",GCAA
+Record Keeping,What are the record-keeping requirements for certifying staff under GCAA regulations?,"Certifying staff are authorised personnel responsible for issuing Certificates of Release to Service (CRS) after maintenance tasks. To ensure traceability, accountability, and regulatory compliance, certifying staff must maintain accurate and complete records of their activities in accordance with GCAA CAR 145.55 and CAR 66.20.
+The key record-keeping requirements include:
+1.	Maintenance Records  Certifying staff must ensure that all maintenance tasks performed or supervised are documented clearly, including task reference, method used, and results.
+2.	Certificate of Release to Service (CRS)  The CRS must include a detailed reference to the maintenance data used, the task performed, the date of completion, and the signature and licence number of the certifying staff.
+3.	Error Reporting and Rectification  Any errors or omissions in documentation must be reported, and corrective action must be recorded as per the organisations procedures.
+4.	Logbook Entries  Where applicable, aircraft and component logbooks must be updated with details of maintenance performed, parts replaced, and deferred defects.
+5.	Retention of Records  Maintenance records signed by certifying staff must be retained by the organisation for a minimum period of 36 months as per CAR 145.55. The records must be stored in a manner that prevents damage, alteration, or unauthorised access.
+6.	Competency and Authorization Records  The organisation must retain a record of the authorisation issued to each certifying staff member, including scope of authorisation, licence details, training, and recent experience. This must be made available to the GCAA upon request.
+Certifying staff must also be aware that falsification or failure to maintain proper records can result in regulatory action, including suspension or revocation of authorisation or licence.
+Proper record-keeping is essential for demonstrating compliance with airworthiness requirements, supporting investigations, and ensuring the integrity of the maintenance process",GCAA
+SB's,What is a Service Bulletin (SB) and how is it managed under GCAA CAR M?,"A Service Bulletin (SB) is a non-mandatory maintenance recommendation issued by an aircraft or component manufacturer. SBs provide information on improvements, defect corrections, product upgrades, inspections, or maintenance instructions. While SBs are advisory in nature, they can become mandatory when referenced in an Airworthiness Directive (AD).
+Under CAR M.302 and CAR M.306, the Continuing Airworthiness Management Organisation (CAMO) is responsible for evaluating SBs for their relevance and applicability to the aircraft under its control. The CAMO must assess each SB and determine whether it should be incorporated into the Aircraft Maintenance Programme (AMP) or accomplished during scheduled maintenance.
+SBs may be:
+1.	Optional  where compliance is at the operators discretion.
+2.	Recommended or Alert  often associated with safety enhancements or known issues.
+3.	Mandatory by consequence  when referenced in an AD or mandated by the GCAA.
+The evaluation of SBs must be documented, including the decision to incorporate or not incorporate the bulletin. If incorporated, the SB must be referenced in the AMP or linked to a specific work order or engineering order.
+Operators must ensure that compliance with SBs is recorded and traceable. When SBs involve changes to approved data (such as structural modifications or avionics upgrades), additional approvals may be required under CAR 21 or by an approved design organisation.
+In the context of commercial air transport under CAR AIR OPS, operators must demonstrate how SBs are reviewed, approved, and implemented as part of their Continuing Airworthiness Management Exposition (CAME) and quality system",GCAA
+CAME,What is a Continuing Airworthiness Management Exposition (CAME) and what are its requirements under GCAA CAR M?,"The CAME is the master document used by a GCAA-approved CAMO to describe how it complies with CAR M Subpart G. It details the structure, responsibilities, procedures, and controls for managing the continuing airworthiness of aircraft.
+
+Key features and requirements:
+
+Management Statement  Signed by the Accountable Manager, confirming commitment to CAR M.
+
+Organisation Structure  Charts, nominated personnel (per CAR M.705), and roles.
+
+Scope of Work  Aircraft types and airworthiness activities the CAMO is approved to manage.
+
+Airworthiness Review Procedures  If authorised under Subpart I, must detail ARC procedures, forms used (e.g. AWF-ARC-15b), and staff qualifications.
+
+Maintenance Programme Oversight  AMP development, control, escalation, and liaison with GCAA.
+
+Subcontract and Contracts  How services are controlled and oversight retained.
+
+Record-Keeping  System for keeping, retrieving, and archiving airworthiness records.
+
+Quality System  Audit planning, compliance monitoring, and corrective action management.
+
+CAME Amendments  Controlled procedure for GCAA approval of changes.
+
+The CAME must always reflect actual working procedures. It is approved by the GCAA and forms the basis of compliance audits.",GCAA
+CAR 66,What are the various Aircraft Maintenance Engineers Licences (AMEL) issues by the GCAA under CAR 66 and there privileges,"The Chicago Convention of 1944 lead to the formation of ICAO who issue SARPS as recommended practices. Annex 1 refers to Personnel Licencing which is put into effect by the GCAA through CAR II - CAR 66.
+
+The GCAA CAR 66 Divides Licences into six categories, these are A, B1, B2, B3, C and L. Cat A and B1 are further subdivided into A1 B1.1, A2 B1.2. A3 B1.3 and A4 B1.4. Aeroplane Turbine, Aeroplane Piston, Helicopter Turbine and Helicopter Piston respectively. 
+
+To obtain an AMEL the Engineer must be 18 years of age on application and complete a process of theoretical and practical assessment completing modules and basic experience on operating aircraft either in a CAR 145 or Subpart F organisation. Theory examination is conducted by a CAR 147 organisation. Type training by a CAR 147 must also be completed with On Job Experience (OJE) required for the first type.
+
+The Cat A licence permits the holder to issue a Certificate to Release to Service (CRS) for their own work following minor line maintenance. A Cat B1 issues CRS for Line maintenance on Structures, Power Plant, Mechanical and Electrical and is Support Staff in Base Maintenance. A Cat B2 has the same privileges as B1 but for Avionics and Electrical Systems. Cat B3 is applicable to non-pressurised aircraft of maximum 2000kg. A Cat C issues CRS following Base Maintenance. Cat L is divided into four categories; Hot Air Balloons, Gas Balloons, Hot-air Ships and Gas Airships. 
+
+To maintain the privileges of a CAR 66 Licence the holder shall demonstrate six month experience in a two year period and be able to read, write and communicate with technical documentation. All privileges are subject to Company authorisation.",GCAA
+AMP,What is an Aircraft Maintenance Program (AMP) as per CAR M?,"The Aircraft Maintenance Program (AMP) is described in GCAA CAR V CAR M.302. and Appendix 1 to the AMC CAR M.320 This details the maintenance of each aircraft type to ensure continued airworthiness. The AMP and any further amendments must be approved by the GCAA. Once approved the AMP should be reviewed annually.
+
+The AMP will include maintenance data derived from approved sources including TC, STC, RTC, ADS, Mods, Etc. detailing tasks to be carried out by the CAR 145 or Subpart F organisation, furthermore details of component overhaul and mandatory inspections will be included. 
+
+For complex motor-powered aircraft (CMPA), when the AMP is based on maintenance steering group logic or on condition monitoring, the AMP shall include a reliability programme based upon maintenance steering group (MSG) logic or those that include condition monitored components or that do not contain overhaul time periods for all significant system components. The purpose of a reliability programme is to ensure that the aircraft maintenance programme tasks are effective and their periodicity is adequate. ",GCAA
+ARC Staff,Discuss the requirements to become an approved CAMO Airworthiness Review Staff as applicable to Commercial Air Transport aircraft.,"To ensure the validity of the aircraft Certificate of Airworthiness, an Airworthiness Review of the aircraft and its continuing airworthiness records shall be carried out periodically as detailed in GCAA CAR M.901 
+
+An ARC is issued in in accordance with Appendix III on the forms AWF-ARC-15a or AWF-ARC-15b on completion of a satisfactory airworthiness review. The airworthiness review certificate shall be valid for one year provided that the certificate is endorsed by the GCAA provided the aircraft is in a controlled environment for one year.
+
+To become an approved CAMO Airworthiness Review Staff under the General Civil Aviation Authority (GCAA) for commercial air transport aircraft, you'll need to meet specific requirements outlined by the GCAA regulations. The criteria is laid down CAR M707 and includes a minimum of five years experience in continuing airworthiness. The ARC staff must also hold an engineering licence that complies with CAR 66 or an Aeronautical degree, however this requirement of the CAR 66 licence or degree may be replace by five years experience additional to the initial minimum, therefore in this case a total of ten years is required. 
+
+In addition to the qualifications and experience the ARC Staff must have formal aeronautical maintenance training and hold a position within the approved organisation with appropriate responsibilities. Training will include continuing airworthiness regulations, knowledge of the CAME and formal type training to cover the aircraft types to be reviewed.
+
+The GCAA must formally approve the ARC staff to work under supervision of either the GCAA or an approved organisation with already approved staff, once accepted their names will be added to the CAME.
+
+To maintain an authorisation the ARC Staff must be involved in continued Airworthiness for six months in the last two years and have conducted an ARC review within the last 12 months. ",GCAA
