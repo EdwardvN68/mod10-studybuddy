@@ -126,7 +126,8 @@ if menu_option == "📝 Start MCQ Practice Quiz":
         correct = row.get(f"option_{correct_letter}", "")
         if choice == correct:
             st.session_state.score += 1
-        st.session_state.answers.append((row['question'], choice, correct, "N/A"))
+        reference = row.get('reference', 'N/A')  # <-- safe access
+        st.session_state.answers.append((row['question'], choice, correct, reference))
         st.session_state.current_question += 1
         st.session_state.advance = True
 
