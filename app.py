@@ -179,6 +179,8 @@ elif menu_option == "🧠 Essay Questions Review":
             st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
             st.markdown(row['Version_3'])
 
+            st.markdown(f"📘 **Reference**: *{row['Reference']}*")  # ✅ Show reference here
+
             if st.button("🔙 Return to Menu"):
                 st.session_state.reviewed_essays.add(idx)
                 st.session_state.essay_mode = "menu"
