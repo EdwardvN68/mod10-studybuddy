@@ -163,7 +163,7 @@ elif menu_option == "🧠 Essay Questions Review":
                 st.rerun()
 
     # === Essay View (Step-by-step reveal) ===
-    elif st.session_state.essay_mode == "view":
+elif st.session_state.essay_mode == "view":
     idx = st.session_state.selected_essay_index
     row = essays.iloc[idx]
 
