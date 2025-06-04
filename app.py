@@ -135,7 +135,7 @@ if menu_option == "📝 Start MCQ Practice Quiz":
 
 # ====================== OTHER MENUS ======================
 elif menu_option == "🧠 Essay Questions Review":
-    essays = pd.read_csv("GCAA_Mod10_Essays_All_With_Titles.csv")
+    essays = pd.read_csv("GCAA_Mod10_Essays_All_With_Titles.csv", encoding="latin1")
 
     # Session state setup
     if "essay_mode" not in st.session_state:
