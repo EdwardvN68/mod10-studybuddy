@@ -153,7 +153,7 @@ elif menu_option == "🧠 Essay Questions Review":
         st.markdown("Select a topic to view its essay:")
 
         for i, row in essays.iterrows():
-            label = row['Topic']
+            label = row['Title']
             if i in st.session_state.reviewed_essays:
                 label = f"✅ {label}"
             if st.button(label, key=f"topic_{i}"):
