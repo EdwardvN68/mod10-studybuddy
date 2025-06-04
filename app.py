@@ -147,7 +147,6 @@ elif menu_option == "🧠 Essay Questions Review":
     if "reviewed_essays" not in st.session_state:
         st.session_state.reviewed_essays = set()
 
-    # === Essay Menu ===
     if st.session_state.essay_mode == "menu":
         st.subheader("📚 Essay Topics")
         st.markdown("Select a topic to view its essay:")
@@ -162,41 +161,40 @@ elif menu_option == "🧠 Essay Questions Review":
                 st.session_state.essay_step = 1
                 st.rerun()
 
-    # === Essay View (Step-by-step reveal) ===
-elif st.session_state.essay_mode == "view":
-    idx = st.session_state.selected_essay_index
-    row = essays.iloc[idx]
+    elif st.session_state.essay_mode == "view":
+        idx = st.session_state.selected_essay_index
+        row = essays.iloc[idx]
 
-    st.markdown(f"### ✍️ {row['Question']}")
-    st.markdown("#### ✏️ Version 1 (Student Draft Style)")
-    st.markdown(row['Version_1'])
+        st.markdown(f"### ✍️ {row['Question']}")
+        st.markdown("#### ✏️ Version 1 (Student Draft Style)")
+        st.markdown(row['Version_1'])
 
-    if st.session_state.essay_step >= 2:
-        st.markdown("---")
-        st.markdown("#### ✏️ Version 2 (Mid-Level Answer)")
-        st.markdown(row['Version_2'])
+        if st.session_state.essay_step >= 2:
+            st.markdown("---")
+            st.markdown("#### ✏️ Version 2 (Mid-Level Answer)")
+            st.markdown(row['Version_2'])
 
-    if st.session_state.essay_step == 3:
-        st.markdown("---")
-        st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
-        st.markdown(row['Version_3'])
+        if st.session_state.essay_step == 3:
+            st.markdown("---")
+            st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
+            st.markdown(row['Version_3'])
 
-        if st.button("🔙 Return to Menu"):
-            st.session_state.reviewed_essays.add(idx)
-            st.session_state.essay_mode = "menu"
-            st.session_state.selected_essay_index = None
-            st.session_state.essay_step = 1
-            st.rerun()
+            if st.button("🔙 Return to Menu"):
+                st.session_state.reviewed_essays.add(idx)
+                st.session_state.essay_mode = "menu"
+                st.session_state.selected_essay_index = None
+                st.session_state.essay_step = 1
+                st.rerun()
 
-    elif st.session_state.essay_step == 2:
-        if st.button("➡️ Continue to Version 3"):
-            st.session_state.essay_step = 3
-            st.rerun()
+        elif st.session_state.essay_step == 2:
+            if st.button("➡️ Continue to Version 3"):
+                st.session_state.essay_step = 3
+                st.rerun()
 
-    elif st.session_state.essay_step == 1:
-        if st.button("➡️ Continue to Version 2"):
-            st.session_state.essay_step = 2
-            st.rerun()
+        elif st.session_state.essay_step == 1:
+            if st.button("➡️ Continue to Version 2"):
+                st.session_state.essay_step = 2
+                st.rerun()
 
 elif menu_option == "📊 View My Results":
     st.subheader("📊 My Quiz History")
