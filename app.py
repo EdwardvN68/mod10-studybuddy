@@ -188,7 +188,6 @@ elif menu_option == "🧠 Essay Questions Review":
             st.session_state.essay_step = 1
             st.rerun()
 
-
     elif st.session_state.essay_step == 2:
         if st.button("➡️ Continue to Version 3"):
             st.session_state.essay_step = 3
