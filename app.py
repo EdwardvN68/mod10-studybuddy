@@ -167,19 +167,19 @@ elif menu_option == "🧠 Essay Questions Review":
         idx = st.session_state.selected_essay_index
         row = essays.iloc[idx]
 
-        st.markdown(f"### ✍️ {row['question']}")
+        st.markdown(f"### ✍️ {row['Question']}")
         st.markdown("#### ✏️ Version 1 (Student Draft Style)")
-        st.markdown(row['version_1'])
+        st.markdown(row['Version_1'])
 
         if st.session_state.essay_step >= 2:
             st.markdown("---")
             st.markdown("#### ✏️ Version 2 (Mid-Level Answer)")
-            st.markdown(row['version_2'])
+            st.markdown(row['Version_2'])
 
         if st.session_state.essay_step == 3:
             st.markdown("---")
             st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
-            st.markdown(row['version_3'])
+            st.markdown(row['Version_3'])
 
         if st.button("🔙 Return to Menu"):
             st.session_state.reviewed_essays.add(idx)
