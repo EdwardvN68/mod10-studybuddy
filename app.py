@@ -176,10 +176,10 @@ elif menu_option == "🧠 Essay Questions Review":
             st.markdown("#### ✏️ Version 2 (Mid-Level Answer)")
             st.markdown(row['Version_2'])
 
-        if st.session_state.essay_step == 3:
-            st.markdown("---")
-            st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
-            st.markdown(row['Version_3'])
+    if st.session_state.essay_step == 3:
+        st.markdown("---")
+        st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
+        st.markdown(row['Version_3'])
 
         if st.button("🔙 Return to Menu"):
             st.session_state.reviewed_essays.add(idx)
