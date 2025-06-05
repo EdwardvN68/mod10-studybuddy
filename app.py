@@ -240,12 +240,12 @@ elif menu_option == "📚 Study Guide / References":
         )
     st.markdown("**Summary of Writing Advice:**")
     st.markdown("""
-    - You have **20 minutes total for 2 essays**.
+    - You have **20 minutes total for 1 essay**.
     - Use your time:
       - 30s to understand the question
-      - 1m to plan
-      - 8m to write
-      - 30s to check
+      - 2-3m to plan
+      - 12-14m to write
+      - 2-3m to check
     - Include:
       - What, Who, When, and under what **regulation**
     - Write clearly, use technical language, and avoid guessing
