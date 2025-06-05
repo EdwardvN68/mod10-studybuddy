@@ -42,7 +42,7 @@ menu_option = st.radio(
         "🧠 Essay Questions Review",
         "📊 View My Results",
         "📚 Study Guide / References",
-        "ℹ️ About This App",
+        "ℹ️ Important Info",
         "🌐 Visit GCAA Website"
     ),
     index=None,
@@ -251,7 +251,7 @@ elif menu_option == "📚 Study Guide / References":
     - Write clearly, use technical language, and avoid guessing
     """)
 
-elif menu_option == "ℹ️ About This App":
+elif menu_option == "ℹ️ Important Info":
     st.subheader("About")
     st.markdown("""
 <h4 style='color:red;'>
