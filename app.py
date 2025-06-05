@@ -251,8 +251,8 @@ elif menu_option == "📚 Study Guide / References":
     - Write clearly, use technical language, and avoid guessing
     """)
 
-elif menu_option == "ℹ️ About This App":
-    st.subheader("About")
+elif menu_option == "ℹ️ Important Info":
+    st.subheader("Important")
     st.markdown("""
 <h4 style='color:red;'>
 ⚠️ Important Notice: This tool is intended for training and self-study purposes only. 
