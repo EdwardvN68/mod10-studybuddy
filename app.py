@@ -2,46 +2,24 @@ import streamlit as st
 import pandas as pd
 import time
 
-# ✅ Make sure quiz history exists before it's used
+import streamlit as st
+
+# Set default state if not present
+if "menu_option" not in st.session_state:
+    st.session_state.menu_option = "mcq"  # default
 if "quiz_history" not in st.session_state:
     st.session_state.quiz_history = []
-
-if "quiz_logged" not in st.session_state:
-    st.session_state.quiz_logged = False
-
-# ✅ Load essay questions from your CSV file
-@st.cache_data
-def load_essays():
-    return pd.read_csv("Mod10_Essay_questions.csv")
-
-# ✅ Set up memory for essay mode screen switching
 if "essay_mode" not in st.session_state:
-    st.session_state.essay_mode = "menu"  # can be "menu" or "view"
-    st.session_state.selected_essay_index = None
-    # ✅ Keep track of which essays the user has reviewed
+    st.session_state.essay_mode = "menu"
+if "essay_step" not in st.session_state:
+    st.session_state.essay_step = 1
 if "reviewed_essays" not in st.session_state:
     st.session_state.reviewed_essays = set()
 
-# Page config – always first
-st.set_page_config(page_title="Mod 10 Study Buddy")
-
-# 🧼 Reset quiz state if user is not on quiz menu
-if st.session_state.get("menu_option") != "📝 Start MCQ Practice Quiz":
-    for key in ["quiz_questions", "current_question", "score", "answers", "advance", "start_time"]:
-        st.session_state.pop(key, None)
-
-# App Title
-st.title("🛠️ Mod 10 Study Buddy")
-st.markdown("Welcome! Please choose a study mode:")
-
-# Menu
-# Show logo at the top
+# ===== MAIN MENU =====
 st.image("Studbud1.png", use_column_width=True)
-
-# Add title
 st.markdown("<h1 style='text-align: center;'>Main Menu</h1>", unsafe_allow_html=True)
 
-# Menu layout using columns
 col1, col2 = st.columns(2)
 
 with col1:
@@ -60,27 +38,33 @@ with col2:
     if st.button("🌐 GCAA Website"):
         st.session_state.menu_option = "website"
 
-if "menu_option" not in st.session_state:
-    st.session_state.menu_option = "mcq"  # Default startup screen
+st.markdown("---")
 
-# === Handle pages ===
+# ===== PAGE LOGIC BLOCKS =====
+
 if st.session_state.menu_option == "mcq":
-    # show your MCQ code block
-
-elif st.session_state.menu_option == "essay":
-    # show essay content
+    st.subheader("📝 MCQ Practice Quiz")
+    st.write("👉 Insert your MCQ logic here.")
 
 elif st.session_state.menu_option == "results":
-    # MCQ results block
+    st.subheader("📊 Your Previous Results")
+    st.write("👉 Display past quiz scores or performance history.")
+
+elif st.session_state.menu_option == "essay":
+    st.subheader("✍️ Essay Questions")
+    st.write("👉 Insert your essay step-by-step logic here.")
 
 elif st.session_state.menu_option == "guide":
-    # study guide PDF viewer
+    st.subheader("📚 Study Guide")
+    st.write("👉 Upload, display or embed your documents here.")
 
 elif st.session_state.menu_option == "info":
-    # optional: show app info or contact notes
+    st.subheader("ℹ️ Important Information")
+    st.write("👉 Use this section to share app usage tips, GCAA disclaimers, or exam format advice.")
 
 elif st.session_state.menu_option == "website":
-    st.markdown("[Open GCAA Website](https://www.gcaa.gov.ae/en/pages/default.aspx)")
+    st.subheader("🌐 GCAA Website")
+    st.markdown("[Visit GCAA Website](https://www.gcaa.gov.ae)", unsafe_allow_html=True)
 
 # ====================== MCQ QUIZ ======================
 if st.session_state.menu_option == "📝 Start MCQ Practice Quiz":
