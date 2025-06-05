@@ -166,12 +166,12 @@ elif menu_option == "🧠 Essay Questions Review":
         row = essays.iloc[idx]
 
         st.markdown(f"### ✍️ {row['Question']}")
-        st.markdown("#### ✏️ Version 1 (Student Draft Style)")
+        st.markdown("#### ✏️ Version 1 (Write down main points first)")
         st.markdown(row['Version_1'])
 
         if st.session_state.essay_step >= 2:
             st.markdown("---")
-            st.markdown("#### ✏️ Version 2 (Mid-Level Answer)")
+            st.markdown("#### ✏️ Version 2 (Start to elaborate on each point)")
             st.markdown(row['Version_2'])
 
         if st.session_state.essay_step == 3:
