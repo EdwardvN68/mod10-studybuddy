@@ -35,19 +35,52 @@ st.title("🛠️ Mod 10 Study Buddy")
 st.markdown("Welcome! Please choose a study mode:")
 
 # Menu
-menu_option = st.radio(
-    "Main Menu",
-    (
-        "📝 Start MCQ Practice Quiz",
-        "🧠 Essay Questions Review",
-        "📊 View My Results",
-        "📚 Study Guide / References",
-        "ℹ️ Important Info",
-        "🌐 Visit GCAA Website"
-    ),
-    index=None,
-    key="menu_option"
-)
+# Show logo at the top
+st.image("Studbud1.png", use_column_width=True)
+
+# Add title
+st.markdown("<h1 style='text-align: center;'>Main Menu</h1>", unsafe_allow_html=True)
+
+# Menu layout using columns
+col1, col2 = st.columns(2)
+
+with col1:
+    if st.button("📝 MCQ"):
+        st.session_state.menu_option = "mcq"
+    if st.button("📊 View Results"):
+        st.session_state.menu_option = "results"
+    if st.button("ℹ️ Important Info"):
+        st.session_state.menu_option = "info"
+
+with col2:
+    if st.button("✍️ Essay"):
+        st.session_state.menu_option = "essay"
+    if st.button("📚 Study Guide"):
+        st.session_state.menu_option = "guide"
+    if st.button("🌐 GCAA Website"):
+        st.session_state.menu_option = "website"
+
+if "menu_option" not in st.session_state:
+    st.session_state.menu_option = "mcq"  # Default startup screen
+
+# === Handle pages ===
+if st.session_state.menu_option == "mcq":
+    # show your MCQ code block
+
+elif st.session_state.menu_option == "essay":
+    # show essay content
+
+elif st.session_state.menu_option == "results":
+    # MCQ results block
+
+elif st.session_state.menu_option == "guide":
+    # study guide PDF viewer
+
+elif st.session_state.menu_option == "info":
+    # optional: show app info or contact notes
+
+elif st.session_state.menu_option == "website":
+    st.markdown("[Open GCAA Website](https://www.gcaa.gov.ae/en/pages/default.aspx)")
 
 # ====================== MCQ QUIZ ======================
 if menu_option == "📝 Start MCQ Practice Quiz":
