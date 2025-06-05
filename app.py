@@ -42,7 +42,7 @@ menu_option = st.radio(
         "🧠 Essay Questions Review",
         "📊 View My Results",
         "📚 Study Guide / References",
-        "ℹ️ About This App",
+        "ℹ️ Important Info",
         "🌐 Visit GCAA Website"
     ),
     index=None,
