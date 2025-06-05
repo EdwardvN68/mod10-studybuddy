@@ -2,72 +2,55 @@ import streamlit as st
 import pandas as pd
 import time
 
-import streamlit as st
-
-# Set default state if not present
-if "menu_option" not in st.session_state:
-    st.session_state.menu_option = "mcq"  # default
+# ✅ Make sure quiz history exists before it's used
 if "quiz_history" not in st.session_state:
     st.session_state.quiz_history = []
+
+if "quiz_logged" not in st.session_state:
+    st.session_state.quiz_logged = False
+
+# ✅ Load essay questions from your CSV file
+@st.cache_data
+def load_essays():
+    return pd.read_csv("Mod10_Essay_questions.csv")
+
+# ✅ Set up memory for essay mode screen switching
 if "essay_mode" not in st.session_state:
-    st.session_state.essay_mode = "menu"
-if "essay_step" not in st.session_state:
-    st.session_state.essay_step = 1
+    st.session_state.essay_mode = "menu"  # can be "menu" or "view"
+    st.session_state.selected_essay_index = None
+    # ✅ Keep track of which essays the user has reviewed
 if "reviewed_essays" not in st.session_state:
     st.session_state.reviewed_essays = set()
 
-# ===== MAIN MENU =====
-st.image("Studbud1.png", use_column_width=True)
-st.markdown("<h1 style='text-align: center;'>Main Menu</h1>", unsafe_allow_html=True)
+# Page config – always first
+st.set_page_config(page_title="Mod 10 Study Buddy")
 
-col1, col2 = st.columns(2)
+# 🧼 Reset quiz state if user is not on quiz menu
+if st.session_state.get("menu_option") != "📝 Start MCQ Practice Quiz":
+    for key in ["quiz_questions", "current_question", "score", "answers", "advance", "start_time"]:
+        st.session_state.pop(key, None)
 
-with col1:
-    if st.button("📝 MCQ"):
-        st.session_state.menu_option = "mcq"
-    if st.button("📊 View Results"):
-        st.session_state.menu_option = "results"
-    if st.button("ℹ️ Important Info"):
-        st.session_state.menu_option = "info"
+# App Title
+st.title("🛠️ Mod 10 Study Buddy")
+st.markdown("Welcome! Please choose a study mode:")
 
-with col2:
-    if st.button("✍️ Essay"):
-        st.session_state.menu_option = "essay"
-    if st.button("📚 Study Guide"):
-        st.session_state.menu_option = "guide"
-    if st.button("🌐 GCAA Website"):
-        st.session_state.menu_option = "website"
-
-st.markdown("---")
-
-# ===== PAGE LOGIC BLOCKS =====
-
-if st.session_state.menu_option == "mcq":
-    st.subheader("📝 MCQ Practice Quiz")
-    st.write("👉 Insert your MCQ logic here.")
-
-elif st.session_state.menu_option == "results":
-    st.subheader("📊 Your Previous Results")
-    st.write("👉 Display past quiz scores or performance history.")
-
-elif st.session_state.menu_option == "essay":
-    st.subheader("✍️ Essay Questions")
-    st.write("👉 Insert your essay step-by-step logic here.")
-
-elif st.session_state.menu_option == "guide":
-    st.subheader("📚 Study Guide")
-    st.write("👉 Upload, display or embed your documents here.")
-
-elif st.session_state.menu_option == "info":
-    st.subheader("ℹ️ Important Information")
-    st.write("👉 Use this section to share app usage tips, GCAA disclaimers, or exam format advice.")
-
-elif st.session_state.menu_option == "website":
-    st.subheader("🌐 GCAA Website")
-    st.markdown("[Visit GCAA Website](https://www.gcaa.gov.ae)", unsafe_allow_html=True)
+# Menu
+menu_option = st.radio(
+    "Main Menu",
+    (
+        "📝 Start MCQ Practice Quiz",
+        "🧠 Essay Questions Review",
+        "📊 View My Results",
+        "📚 Study Guide / References",
+        "ℹ️ About This App",
+        "🌐 Visit GCAA Website"
+    ),
+    index=None,
+    key="menu_option"
+)
 
 # ====================== MCQ QUIZ ======================
-if st.session_state.menu_option == "📝 Start MCQ Practice Quiz":
+if menu_option == "📝 Start MCQ Practice Quiz":
     try:
         df = pd.read_csv("module10_questions.csv")
     except Exception as e:
@@ -151,7 +134,7 @@ if st.session_state.menu_option == "📝 Start MCQ Practice Quiz":
     st.radio("Choose one:", options, key=f"q_{q_index}", index=None, on_change=handle_choice)
 
 # ====================== OTHER MENUS ======================
-elif st.session_state.menu_option == "🧠 Essay Questions Review":
+elif menu_option == "🧠 Essay Questions Review":
     essays = pd.read_csv("GCAA_Mod10_Essays_All_With_Titles.csv", encoding="latin1")
 
     # Session state setup
@@ -196,7 +179,7 @@ elif st.session_state.menu_option == "🧠 Essay Questions Review":
             st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
             st.markdown(row['Version_3'])
 
-            st.markdown(f"📘 **Reference**: *{row['Reference']}*")  # ✅ Show reference here
+            st.markdown(f"📘 **Reference**: *{row['reference']}*")  # ✅ Show reference here
 
             if st.button("🔙 Return to Menu"):
                 st.session_state.reviewed_essays.add(idx)
@@ -215,7 +198,7 @@ elif st.session_state.menu_option == "🧠 Essay Questions Review":
                 st.session_state.essay_step = 2
                 st.rerun()
 
-elif st.session_state.menu_option == "📊 View My Results":
+elif menu_option == "📊 View My Results":
     st.subheader("📊 My Quiz History")
 
     if not st.session_state.quiz_history:
@@ -224,7 +207,7 @@ elif st.session_state.menu_option == "📊 View My Results":
         st.markdown("### 📝 Previous Attempts")
         st.table(st.session_state.quiz_history)
 
-elif st.session_state.menu_option == "📚 Study Guide / References":
+elif menu_option == "📚 Study Guide / References":
     st.subheader("📚 Study Guide & References")
 
     st.markdown("The following documents are provided to help you prepare for the GCAA Module 10 essay exam:")
@@ -268,8 +251,8 @@ elif st.session_state.menu_option == "📚 Study Guide / References":
     - Write clearly, use technical language, and avoid guessing
     """)
 
-elif st.session_state.menu_option == "ℹ️ Important Info":
-    st.subheader("Important")
+elif menu_option == "ℹ️ About This App":
+    st.subheader("About")
     st.markdown("""
 <h4 style='color:red;'>
 ⚠️ Important Notice: This tool is intended for training and self-study purposes only. 
@@ -279,7 +262,7 @@ for accurate and current information.
 </h4>
 """, unsafe_allow_html=True)
 
-elif st.session_state.menu_option == "🌐 Visit GCAA Website":
+elif menu_option == "🌐 Visit GCAA Website":
     st.subheader("🌐 General Civil Aviation Authority (UAE)")
     st.markdown("""
     Visit the official GCAA website for up-to-date regulatory documents, safety publications, and contact information.
