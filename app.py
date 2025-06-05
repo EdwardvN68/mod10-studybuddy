@@ -83,7 +83,7 @@ elif st.session_state.menu_option == "website":
     st.markdown("[Open GCAA Website](https://www.gcaa.gov.ae/en/pages/default.aspx)")
 
 # ====================== MCQ QUIZ ======================
-if menu_option == "📝 Start MCQ Practice Quiz":
+if st.session_state.menu_option == "📝 Start MCQ Practice Quiz":
     try:
         df = pd.read_csv("module10_questions.csv")
     except Exception as e:
@@ -167,7 +167,7 @@ if menu_option == "📝 Start MCQ Practice Quiz":
     st.radio("Choose one:", options, key=f"q_{q_index}", index=None, on_change=handle_choice)
 
 # ====================== OTHER MENUS ======================
-elif menu_option == "🧠 Essay Questions Review":
+elif st.session_state.menu_option == "🧠 Essay Questions Review":
     essays = pd.read_csv("GCAA_Mod10_Essays_All_With_Titles.csv", encoding="latin1")
 
     # Session state setup
@@ -212,7 +212,7 @@ elif menu_option == "🧠 Essay Questions Review":
             st.markdown("#### ✅ Version 3 (Full Answer with Reference)")
             st.markdown(row['Version_3'])
 
-            st.markdown(f"📘 **Reference**: *{row['reference']}*")  # ✅ Show reference here
+            st.markdown(f"📘 **Reference**: *{row['Reference']}*")  # ✅ Show reference here
 
             if st.button("🔙 Return to Menu"):
                 st.session_state.reviewed_essays.add(idx)
@@ -231,7 +231,7 @@ elif menu_option == "🧠 Essay Questions Review":
                 st.session_state.essay_step = 2
                 st.rerun()
 
-elif menu_option == "📊 View My Results":
+elif st.session_state.menu_option == "📊 View My Results":
     st.subheader("📊 My Quiz History")
 
     if not st.session_state.quiz_history:
@@ -240,7 +240,7 @@ elif menu_option == "📊 View My Results":
         st.markdown("### 📝 Previous Attempts")
         st.table(st.session_state.quiz_history)
 
-elif menu_option == "📚 Study Guide / References":
+elif st.session_state.menu_option == "📚 Study Guide / References":
     st.subheader("📚 Study Guide & References")
 
     st.markdown("The following documents are provided to help you prepare for the GCAA Module 10 essay exam:")
@@ -284,7 +284,7 @@ elif menu_option == "📚 Study Guide / References":
     - Write clearly, use technical language, and avoid guessing
     """)
 
-elif menu_option == "ℹ️ Important Info":
+elif st.session_state.menu_option == "ℹ️ Important Info":
     st.subheader("Important")
     st.markdown("""
 <h4 style='color:red;'>
@@ -295,7 +295,7 @@ for accurate and current information.
 </h4>
 """, unsafe_allow_html=True)
 
-elif menu_option == "🌐 Visit GCAA Website":
+elif st.session_state.menu_option == "🌐 Visit GCAA Website":
     st.subheader("🌐 General Civil Aviation Authority (UAE)")
     st.markdown("""
     Visit the official GCAA website for up-to-date regulatory documents, safety publications, and contact information.
