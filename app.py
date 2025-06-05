@@ -210,7 +210,7 @@ elif menu_option == "📊 View My Results":
 elif menu_option == "📚 Study Guide / References":
     st.subheader("📚 Study Guide & References")
 
-    st.markdown("The following documents are provided to help you prepare for the GCAA Module 10 essay exam:")
+    st.markdown("The following documents will help you prepare for the GCAA Module 10 essay exam:")
 
     # ✅ Document 1
     with open("GCAA Module 10 Essay Exam guidance.docx", "rb") as f:
@@ -220,15 +220,6 @@ elif menu_option == "📚 Study Guide / References":
             file_name="GCAA Module 10 Essay Exam guidance.docx",
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         )
-    st.markdown("**Summary of Key Guidance:**")
-    st.markdown("""
-    - Answer the question that was asked, not what you wish was asked.
-    - Structure your essay like an engineer:
-      - Introduction → Bullet point body → Conclusion
-    - Always cite the regulation (e.g. CAR M.901, CAR 145.55)
-    - Write like a certifying staff member, not a student.
-    - Understand and explain — don’t just remember.
-    """)
 
     # ✅ Document 2
     with open("Writing a GCAA Module 10 Essay.docx", "rb") as f:
@@ -238,18 +229,30 @@ elif menu_option == "📚 Study Guide / References":
             file_name="Writing a GCAA Module 10 Essay.docx",
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         )
-    st.markdown("**Summary of Writing Advice:**")
+
+    st.markdown("---")
+    st.markdown("### ✍️ Quick Writing Tips (Summary)")
     st.markdown("""
-    - You have **20 minutes total for 1 essay**.
-    - Use your time:
-      - 30s to understand the question
-      - 2-3m to plan
-      - 12-14m to write
-      - 2-3m to check
-    - Include:
-      - What, Who, When, and under what **regulation**
-    - Write clearly, use technical language, and avoid guessing
+- You have **20 minutes total to write 1 essay**
+- **Use your time:**
+  - 30 sec to understand the question
+  - 2–3 min to plan
+  - 12–14 min to write
+  - 2–3 min to check
+- **Structure your answer:**
+  - Intro: What is it? Why is it important?
+  - Main: Who does what, when, how, and under what regulation
+  - Close: Why it matters (e.g. safety, compliance, airworthiness)
+- **Final check:**
+  - Did you answer the question?
+  - Did you include a regulation?
+  - Would it sound correct to an examiner?
+- **Tips:**
+  - Be clear, direct, and factual—don’t guess
+  - Use technical language—write like an engineer, not a student
     """)
+
+    st.info("ℹ️ For full guidance, download and read both documents above.")
 
 elif menu_option == "ℹ️ Important Info":
     st.markdown("""
