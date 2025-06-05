@@ -252,15 +252,15 @@ elif menu_option == "📚 Study Guide / References":
     """)
 
 elif menu_option == "ℹ️ Important Info":
-    st.subheader("About")
     st.markdown("""
-<h4 style='color:red;'>
-⚠️ Important Notice: This tool is intended for training and self-study purposes only. 
-It is not an official source of GCAA regulations, requirements, or policy. 
-All users must refer to the latest official GCAA publications and regulatory documents 
-for accurate and current information.
-</h4>
-""", unsafe_allow_html=True)
+    <div style='text-align: center;'>
+        <h2 style='color: red;'>⚠️ <b>Important Notice</b></h2>
+        <p style='color: red; font-size: 18px; font-weight: bold;'>
+            This tool is intended for training and self-study purposes only. It is not an official source of GCAA regulations, requirements, or policy.
+            All users must refer to the latest official GCAA publications and regulatory documents for accurate and current information.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 elif menu_option == "🌐 Visit GCAA Website":
     st.subheader("🌐 General Civil Aviation Authority (UAE)")
